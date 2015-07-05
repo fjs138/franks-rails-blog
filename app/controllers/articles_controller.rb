@@ -1,4 +1,7 @@
 class ArticlesController < ApplicationController
+#security to deny unauthorized users from making creations, edits, updates
+  http_basic_authenticate_with name: "frank", password: "secret",
+                               except: [:index, :show]
   def index
     @articles = Article.all
   end

@@ -1,2 +1,10 @@
-# Frank's Rail's Blog
-This is a Ruby on Rails blog I created during my investigation of the current state of Rails, Django, Node, and other more traditional web development frameworks.
+# Frank's Rails' Blog
+This is a basic blog developed using Ruby on Rails.
+
+While rather simple, it still utilizes http_basic_authenticate_with for authentication to prevent unauthorized users from modifying content.
+
+You can start the server by invoking bin/rails server followed by using a web browser to connect to http://localhost:3000/articles
+
+
+Note:
+Credentials for logging in are: "name": "frank", "password": "secret",

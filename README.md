@@ -1,5 +1,5 @@
 # Frank's Rails' Blog
-<h1>A blog developed in Ruby,  on powered by Rails, a server-side web application framework.</h1>
+<h1>A blog developed in Ruby, powered by Rails, a server-side web application framework.</h1>
 
 <h2>It utilizes <code>http_basic_authenticate_with</code> for authentication to prevent unauthorized users from modifying content.
 

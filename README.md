@@ -1,5 +1,5 @@
 # Frank's Rails' Blog
-A blog developed using Ruby on Rails.
+<h2>A blog developed using Ruby on Rails.
 
 It utilizes <code>http_basic_authenticate_with</code> for authentication to prevent unauthorized users from modifying content.
 
@@ -8,7 +8,7 @@ You can start the server by invoking bin/rails server followed by using a web br
 
 Note:
 Credentials for logging in are: "name": "frank", "password": "secret",
-<br>
+<br></h2>
 MIT License
 
 Copyright (c) 2020 Frank Santaguida

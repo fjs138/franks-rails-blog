@@ -1,7 +1,7 @@
 # Frank's Rails' Blog
-<h2>A blog developed using Ruby on Rails.
+<h1>A blog developed in Ruby,  on powered by Rails, a server-side web application framework.</h1>
 
-It utilizes <code>http_basic_authenticate_with</code> for authentication to prevent unauthorized users from modifying content.
+<h2>It utilizes <code>http_basic_authenticate_with</code> for authentication to prevent unauthorized users from modifying content.
 
 You can start the server by invoking bin/rails server followed by using a web browser to connect to http://localhost:3000/articles
 

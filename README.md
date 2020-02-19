@@ -15,15 +15,18 @@ It utilizes <code>http_basic_authenticate_with</code> for authentication to prev
 
 # Project Specifications
 
-Create new posts
+Create articles
 
-View all posts ordered by upvotes
+List articles
 
-Add comments about a given post
+Display articles
 
-View comments for a given post
+Delete articles
 
-Upvote posts and comments
+Add comments about a given article
+
+View comments for a given article
+
 
 # Anatomy of Project
 

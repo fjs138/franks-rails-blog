@@ -5,13 +5,9 @@ A blog developed in Ruby, powered by Rails, a server-side web application framew
 
 | Technology    	| Use           	  | Description     										  |
 | :------------------|:-------------------| :----------------										  |
-| AngularJS     	| Frontend 			  |JavaScript web-app framework for dynamic views in web-apps. |
-| Express   		| Backend 			  | Minimal, flexible web-app framework for Node.js.							  |
-| Node.js 			| Server     |Event-driven I/O server-side JavaScript environment.				  |
-| MongoDB			| Database			  |	Next-generation NoSQL / JSON database.            |
-| Twitter Bootstrap | Styling			  |The most popular HTML, CSS, and JS framework for web projects.|
-| Angular ui-router | Client-side routing |Solution to flexible routing with nested views in AngularJS.|
-| Mongoose.js       | For adding structure to MongoDB |Writing MongoDB boilerplate is a drag. |
+| Ruby on Rails 			| Backend     | Server-side, web application (MVC) framework				  |
+| SQLite3			| Database			  |	Not a client–server database engine; it is embedded into the end program.            |
+
 
 # Project Specifications
 

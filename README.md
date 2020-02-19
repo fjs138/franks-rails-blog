@@ -67,11 +67,10 @@ Upvote posts and comments
 # Instructions
 Start the application by running `npm start` from within the `redditclone` folder.
 Ttart the server by invoking bin/rails server followed by using a web browser to connect to http://localhost:3000/articles
-<br>
+<br><br>
 Note:
 Credentials for logging in are: "name": "frank", "password": "secret",
 <br>
-Go to `http://localhost:3000` in a modern web browser to see the Angular application.
 <br><br>
 
 

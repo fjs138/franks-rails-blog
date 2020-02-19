@@ -77,7 +77,7 @@ Credentials for logging in are: "name": "frank", "password": "secret",
 <br><br>
 
 
-
+# License
 MIT License
 
 Copyright (c) 2015 Frank Santaguida

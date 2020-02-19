@@ -40,14 +40,13 @@ Upvote posts and comments
 | package.json			 			| 	This file specifies what npm dependencies are needed for  Rails application. This file is used by Yarn.    |
 | public/			 			| 	Viewable by "the world". Contains static files and compiled assets.     |
 | Rakefile			 			| 	Locates and loads tasks that can be run from the command line. The task definitions are defined throughout the components of Rails. Rather than changing Rakefile, you should add your own tasks by adding files to the lib/tasks directory of your application.  |
-|README.md			 			| 	Extended modules for the application.    |
-|storage/		 			| 	Extended modules for the application.    |
-| test/			 			| 	Unit tests, fixtures, and other test apparatus.    |
-| tmp/			 			| 	Temporary files (like cache and pid files).
-   |
-| vendor/		 			| 	Third-party code; vendored gems.    |
-| .gitignore			 			| 	Tells git which files (or patterns) it should ignore.     |
-| .ruby-version	 			| 	Contains the default Ruby version.   |
+|README.md			| 	Extended modules for the application.                 |
+|storage/		 	| 	Extended modules for the application.                 |
+| test/			 	| 	Unit tests, fixtures, and other test apparatus.       |
+| tmp/			 	| 	Temporary files (like cache and pid files).           |
+| vendor/		 	| 	Third-party code; vendored gems.                      |
+| .gitignore		| 	Tells git which files (or patterns) it should ignore. |
+| .ruby-version	| 	Contains the default Ruby version.                    |
 
 ## The actions that users can perform are mapped to routes as follows:
 | Prefix       |Method| URI Pattern             	  | Controller#Action|

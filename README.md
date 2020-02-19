@@ -7,6 +7,9 @@ A blog developed in Ruby, powered by Rails, a server-side web application framew
 | :------------------|:-------------------| :----------------										  |
 | Ruby on Rails 			| Backend     | Server-side, web application (MVC) framework				  |
 | SQLite3			| Database			  |	Not a client–server database engine; it is embedded into the end program.            |
+| http_basic_authenticate_with			| Authentication			  |	HTTP Basic authentication.            |
+
+
 
 
 # Project Specifications
@@ -21,54 +24,53 @@ View comments for a given post
 
 Upvote posts and comments
 
-# Anatomy of 'redditclone' Node.js Project
-## located in sub-folder `redditclone`
-`app.js` - The launching point of the app. Imports all server files
-including modules, configure routes, open database connections, etc.
+# Anatomy of Project
 
-`bin/` - Contains executable scripts, notably the `www` script, which
-includes `app.js` and when executed launches our Node.js server
 
-`node_modules/` - Contains of all external modules used in the project.
-The command `npm install` populates this.
-
-`package.json` - Defines a JSON object that contains various properties
-of our project, including names and version numbers.
-Defines what modules our project depends on. See the link for details:
-https://www.npmjs.org/doc/package.json.html
-
-`public/` - Anything in this folder will be made publicly available by
-the server. Contains JavaScript, CSS, images, and templates that
-the client(s) are intended to access.
-
-`routes/` - Contains the Node.js controllers. This is where most of the
-backend code will be stored.
-
-`views/` - Contains the various views. Due to specifying the `--ejs` flag
-when generating the project, views will have the extension '.ejs' rather
-than '.jade'. This means the views will be in HTML instead of Jade.
-
-Note: Views are capable of being rendered <i>directly</i> by Node.js
-by the use of the `render()` function and can contain logic that allows
-the server to dynamically change the content. This functionality will
-not be used in this project however. This is because the Angular.js
-framework is being used to create the dynamic experience instead.
+| File/Folder    	| Purpose           	  |
+| :------------------|:-------------------|
+| app/	 			| Contains the controllers, models, views, helpers, mailers, channels, jobs, and assets.     |
+| bin/		 			| Contains the rails script that starts the app and can contain other scripts used to setup, update, deploy, or run your application.    |
+| config/		 			| Configures the application's routes, database, and more.    |
+| config.ru		 			| 	Rack configuration for Rack based servers used to start the application.     |
+| db/			 			| 	Contains the current database schema, as well as the database migrations.    |
+| Gemfile, Gemfile.lock		 			| 	These files allow you to specify what gem dependencies are needed for your Rails application. These files are used by the Bundler gem.     |
+| lib/			 			| 	Extended modules for the application.    |
+| log/			 			| 	Application log files.     |
+| package.json			 			| 	This file specifies what npm dependencies are needed for  Rails application. This file is used by Yarn.    |
+| public/			 			| 	Viewable by "the world". Contains static files and compiled assets.     |
+| Rakefile			 			| 	Locates and loads tasks that can be run from the command line. The task definitions are defined throughout the components of Rails. Rather than changing Rakefile, you should add your own tasks by adding files to the lib/tasks directory of your application.  |
+|README.md			 			| 	Extended modules for the application.    |
+|storage/		 			| 	Extended modules for the application.    |
+| test/			 			| 	Unit tests, fixtures, and other test apparatus.    |
+| tmp/			 			| 	Temporary files (like cache and pid files).
+   |
+| vendor/		 			| 	Third-party code; vendored gems.    |
+| .gitignore			 			| 	Tells git which files (or patterns) it should ignore.     |
+| .ruby-version	 			| 	Contains the default Ruby version.   |
 
 ## The actions that users can perform are mapped to routes as follows:
-`GET /posts` - return a list of posts and associated metadata
+| Prefix       |Method| URI Pattern             	  | Controller#Action|
+| :------------------ |:-------------------         | :----------------										  |:----------------										  |
+|welcome_index |GET   |    /welcome/index(.:format)  |   welcome#index|
+|     articles |GET   |   /articles(.:format)    |      articles#index|
+|              |POST  |  /articles(.:format)    |      articles#create|
+|  new_article |GET   | /articles/new(.:format)   |   articles#new|
+| edit_article |GET   |/articles/:id/edit(.:format) |articles#edit|
+|      article |GET   | /articles/:id(.:format)   |   articles#show|
+|              |PATCH | /articles/:id(.:format)     | articles#update|
+|              |PUT   | /articles/:id(.:format)     | articles#update|
+|              |DELETE| /articles/:id(.:format)   |   articles#destroy|
+|         root |GET   | /  |                          welcome#index|
 
-`POST /posts` - create a new post
-
-`GET /posts/:id` - return an individual post with associated comments
-
-`PUT /posts/:id/upvote` - upvote a post, notice we use the post ID in the URL
-
-`POST /posts/:id/comments` - add a new comment to a post by ID
-
-`PUT /posts/:id/comments/:id/upvote` - upvote a comment
 
 # Instructions
 Start the application by running `npm start` from within the `redditclone` folder.
+Ttart the server by invoking bin/rails server followed by using a web browser to connect to http://localhost:3000/articles
+<br>
+Note:
+Credentials for logging in are: "name": "frank", "password": "secret",
+<br>
 Go to `http://localhost:3000` in a modern web browser to see the Angular application.
 <br><br>
 MIT License
@@ -98,12 +100,7 @@ SOFTWARE.
 
 <h2>It utilizes <code>http_basic_authenticate_with</code> for authentication to prevent unauthorized users from modifying content.
 
-<br>You can start the server by invoking bin/rails server followed by using a web browser to connect to http://localhost:3000/articles
 
-
-Note:
-Credentials for logging in are: "name": "frank", "password": "secret",
-<br></h2>
 MIT License
 
 Copyright (c) 2015 Frank Santaguida

@@ -68,8 +68,7 @@ View comments for a given article
 
 
 # Instructions
-Start the application by running `npm start` from within the `redditclone` folder.
-Ttart the server by invoking bin/rails server followed by using a web browser to connect to http://localhost:3000/articles
+Start the server by invoking bin/rails server followed by using a web browser to connect to http://localhost:3000/articles
 <br><br>
 Note:
 Credentials for logging in are: "name": "frank", "password": "secret",

@@ -1,7 +1,7 @@
-# Frank's Rails' Blog
+## Frank's Rails' Blog
 A blog developed in Ruby, powered by Rails, a server-side web application framework.<br>
 It utilizes <code>http_basic_authenticate_with</code> for authentication to prevent unauthorized users from modifying content.
-# Technology Stack:
+## Technology Stack:
 
 
 | Technology    	| Use           	  | Description     										  |
@@ -13,7 +13,7 @@ It utilizes <code>http_basic_authenticate_with</code> for authentication to prev
 
 
 
-# Project Specifications
+## Project Specifications
 
 Create articles
 
@@ -67,7 +67,7 @@ View comments for a given article
 |         root |GET   | /  |                          welcome#index|
 
 
-# Instructions
+## Instructions
 Start the server by invoking bin/rails server followed by using a web browser to connect to http://localhost:3000/articles
 <br><br>
 Note:
@@ -76,7 +76,7 @@ Credentials for logging in are: "name": "frank", "password": "secret",
 <br><br>
 
 
-# License
+## License
 MIT License
 
 Copyright (c) 2015 Frank Santaguida

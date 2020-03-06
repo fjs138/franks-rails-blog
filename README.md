@@ -28,7 +28,7 @@ Add comments about a given article
 View comments for a given article
 
 
-# Anatomy of Project
+## Anatomy of Project
 
 
 | File/Folder    	| Purpose           	  |

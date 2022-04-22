@@ -1,7 +1,10 @@
 ## Frank's Rails' Blog
 A blog developed in Ruby, powered by Rails, a server-side web application framework.<br>
 It utilizes <code>http_basic_authenticate_with</code> for authentication to prevent unauthorized users from modifying content.
-## Technology Stack:
+## The Goal
+Build a blog site using Ruby on Rails.
+
+## Technology Stack
 
 
 | Technology    	| Use           	  | Description     										  |
